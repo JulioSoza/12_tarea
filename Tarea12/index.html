@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Guesser</h1>
+        <div id="game">
+            <div id="round-info">
+                <p><strong>Round <span id="round-number">1</span></strong></p>
+                <p>Target Number: <span id="target-number">?</span></p>
+            </div>
+            <div id="scores">
+                <p>Computer Score: <span id="computer-score">0</span></p>
+                <p>Your Score: <span id="human-score">0</span></p>
+            </div>
+            <div id="input-section">
+                <input type="number" id="guess-input" min="0" max="9" placeholder="Make a Guess">
+                <button id="submit-guess">Submit</button>
+            </div>
+            <div id="result-message"></div>
+            <button id="next-round" disabled>Next Round</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
